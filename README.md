@@ -24,7 +24,14 @@ If there is a quantum computer with a sufficient number of qubits that can opera
 
 The used of the QFT is to transform the states from Fourier basis to computational basis. The Fourier basis is results from applying the c-U gates. Where The period is "encoded" as phases, IQFT helps in restoring the period as 0 and 1 states. 
  
+How does it work?  
+1) We need to find the coprime number (𝑎) by finding the 𝐺𝐶𝐷(𝑎,63)=1
+2) We need to apply for every coprime number (𝑎) this following equation [ 𝑎∗𝑦 𝑚𝑜𝑑 63], where 𝑦 is a random number form 
+1 to 63
+3) We will use this special case when we find some numbers sharing the same behavior and they have the same swap circuit but for every odd number we will need to implement an X- gate.
 
+The similarities between all co-primes of 63 are in the attached excel file. However, the following is a simple outline of the SWAP gates drawn for 63 co-primes. 
+ 
 # Requirements
 Python 3.x, numpy, matplotlib, qiskit-terra, qiskit-aer, qiskit-aqua
 
