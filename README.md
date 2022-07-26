@@ -1,7 +1,8 @@
 # Shors_Algorithm
-It is a quantum computer algorithm which its used for finding the prime factor of an integer. It was developed in 1994 by the American mathematician Peter Shor. In the quantum computer to factor an integer N, Shor’s algorithm will run in polynomial time which means the time taken polynomial in log N. Where N is an integer, and its size is given as an input. The efficiency of the Shor’s algorithm is due to the efficiency of the QFT and the modular exponentiation. 
+It is a quantum computer algorithm which its used for finding the prime factor of an integer. It was developed in 1994 by the American mathematician Peter Shor. In the quantum computer to factor an integer N, Shor’s algorithm will run in polynomial time which means the time taken polynomial in log N. Where N is an integer, and its size is given as an input. The efficiency of the Shor’s algorithm is due to the efficiency of the QFT and the modular exponentiation. This algorithm can break many asymmetric (public/private key) cryptosystems, such as RSA or Diffie–Hellman.
 
-Shor's ALgorithm implemented factorizing 63 on Qiskit using SWAP gates, Python 3.X
+
+Shor's ALgorithm is implemented factorizing 63 on Qiskit using SWAP gates, Python 3.X
 
 # Motivation
 at Qiskit, it shows that we can acheive factroizing the number 15 by only using SWAP Gates, however we wanted achieve writing the full algorithm using SWAP gates only and factorizing the number 63. 
